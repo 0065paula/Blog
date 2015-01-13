@@ -9,9 +9,9 @@ relative_permalinks: true
 # Setup
 title:            Poole
 tagline:          The Jekyll Butler
-url:              https://0065paula.github.io/blog
+url:              http://0065paula.github.io/blog
 paginate:         1
-baseurl:          https://0065paula.github.io/blog
+baseurl:          http://0065paula.github.io/blog
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
