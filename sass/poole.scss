@@ -2,8 +2,8 @@
  *                        ___
  *                       /\_ \
  *  _____     ___     ___\//\ \      __
- * /\ '__`\  / __`\  / __`\ \ \   /'__`\
- * \ \ \_\ \/\ \_\ \/\ \_\ \_\ \_/\  __/
+ * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
+ * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
  *  \ \ ,__/\ \____/\ \____//\____\ \____\
  *   \ \ \/  \/___/  \/___/ \/____/\/____/
  *    \ \_\
@@ -12,6 +12,8 @@
  * Designed, built, and released under MIT license by @mdo. Learn more at
  * https://github.com/poole/poole.
  */
+
+
 /*
  * Contents
  *
@@ -25,67 +27,60 @@
  * Reverse layout
  * Themes
  */
+
+
 /*
  * Body resets
  *
  * Update the foundational and global aspects of the page.
  */
-/* line 39, ../../sass/poole.scss */
+
+
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-/* line 46, ../../sass/poole.scss */
 html,
 body {
   margin: 0;
   padding: 0;
 }
 
-/* line 51, ../../sass/poole.scss */
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Source Han Sans", "Microsoft YaHei" sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
-
 @media (min-width: 38em) {
-  /* line 57, ../../sass/poole.scss */
   html {
     font-size: 20px;
   }
 }
-/* line 62, ../../sass/poole.scss */
+
 body {
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
-/* line 70, ../../sass/poole.scss */
 a {
   color: #268bd2;
   text-decoration: none;
 }
-
-/* line 74, ../../sass/poole.scss */
 a strong {
   color: inherit;
 }
-
 /* `:focus` is linked to `:hover` for basic accessibility */
-/* line 79, ../../sass/poole.scss */
 a:hover,
 a:focus {
   text-decoration: underline;
 }
 
 /* Headings */
-/* line 84, ../../sass/poole.scss */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
@@ -93,61 +88,47 @@ h1, h2, h3, h4, h5, h6 {
   color: #313131;
   text-rendering: optimizeLegibility;
 }
-
-/* line 91, ../../sass/poole.scss */
 h1 {
   font-size: 2rem;
 }
-
-/* line 94, ../../sass/poole.scss */
 h2 {
   margin-top: 1rem;
   font-size: 1.5rem;
 }
-
-/* line 98, ../../sass/poole.scss */
 h3 {
   margin-top: 1.5rem;
   font-size: 1.25rem;
 }
-
-/* line 102, ../../sass/poole.scss */
 h4, h5, h6 {
   margin-top: 1rem;
   font-size: 1rem;
 }
 
 /* Body text */
-/* line 108, ../../sass/poole.scss */
 p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 113, ../../sass/poole.scss */
 strong {
   color: #303030;
 }
 
+
 /* Lists */
-/* line 119, ../../sass/poole.scss */
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 124, ../../sass/poole.scss */
 dt {
   font-weight: bold;
 }
-
-/* line 127, ../../sass/poole.scss */
 dd {
   margin-bottom: .5rem;
 }
 
 /* Misc */
-/* line 132, ../../sass/poole.scss */
 hr {
   position: relative;
   margin: 1.5rem 0;
@@ -156,28 +137,22 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-/* line 140, ../../sass/poole.scss */
 abbr {
   font-size: 85%;
   font-weight: bold;
   color: #555;
   text-transform: uppercase;
 }
-
-/* line 146, ../../sass/poole.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
 }
 
 /* Code */
-/* line 153, ../../sass/poole.scss */
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
-
-/* line 156, ../../sass/poole.scss */
 code {
   padding: .25em .5em;
   font-size: 85%;
@@ -185,8 +160,6 @@ code {
   background-color: #f9f9f9;
   border-radius: 3px;
 }
-
-/* line 163, ../../sass/poole.scss */
 pre {
   display: block;
   margin-top: 0;
@@ -200,8 +173,6 @@ pre {
   word-wrap: break-word;
   background-color: #f9f9f9;
 }
-
-/* line 176, ../../sass/poole.scss */
 pre code {
   padding: 0;
   font-size: 100%;
@@ -210,41 +181,29 @@ pre code {
 }
 
 /* Pygments via Jekyll */
-/* line 184, ../../sass/poole.scss */
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
 }
-
-/* line 188, ../../sass/poole.scss */
 .highlight pre {
   margin-bottom: 0;
 }
 
 /* Gist via GitHub Pages */
-/* line 193, ../../sass/poole.scss */
 .gist .gist-file {
   font-family: Menlo, Monaco, "Courier New", monospace !important;
 }
-
-/* line 196, ../../sass/poole.scss */
 .gist .markdown-body {
   padding: 15px;
 }
-
-/* line 199, ../../sass/poole.scss */
 .gist pre {
   padding: 0;
   background-color: transparent;
 }
-
-/* line 203, ../../sass/poole.scss */
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
   line-height: 1.4;
 }
-
-/* line 207, ../../sass/poole.scss */
 .gist code {
   padding: 0;
   color: inherit;
@@ -253,27 +212,22 @@ pre code {
 }
 
 /* Quotes */
-/* line 215, ../../sass/poole.scss */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
   color: #7a7a7a;
   border-left: .25rem solid #e5e5e5;
 }
-
-/* line 221, ../../sass/poole.scss */
 blockquote p:last-child {
   margin-bottom: 0;
 }
-
 @media (min-width: 30em) {
-  /* line 225, ../../sass/poole.scss */
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
 }
-/* line 231, ../../sass/poole.scss */
+
 img {
   display: block;
   max-width: 100%;
@@ -282,37 +236,34 @@ img {
 }
 
 /* Tables */
-/* line 239, ../../sass/poole.scss */
 table {
   margin-bottom: 1rem;
   width: 100%;
   border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
-
-/* line 246, ../../sass/poole.scss */
 td,
 th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
-
-/* line 251, ../../sass/poole.scss */
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
 
 /*
  * Custom type
  *
  * Extend paragraphs with `.lead` for larger introductory text.
  */
-/* line 262, ../../sass/poole.scss */
+
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
+
 
 /*
  * Messages
@@ -320,7 +271,7 @@ tbody tr:nth-child(odd) th {
  * Show alert messages to users. You may add it to single elements like a `<p>`,
  * or to a parent if there are multiple elements to show.
  */
-/* line 275, ../../sass/poole.scss */
+
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
@@ -328,62 +279,64 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
+
 /*
  * Container
  *
  * Center the page content.
  */
-/* line 289, ../../sass/poole.scss */
+
 .container {
-  max-width: 38rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 8rem;
-  margin-left: auto;
-  margin-right: auto;
+  max-width     : 38rem;
+  padding-left  : 1rem;
+  padding-right : 1rem;
+  padding-top   : 8rem;
+  margin-left   : auto;
+  margin-right  : auto;
 }
+
 
 /*
  * Masthead
  *
  * Super small header above the content for site name and short description.
  */
-/* line 305, ../../sass/poole.scss */
+
 .masthead {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 1px solid #eee;
-  letter-spacing: .3rem;
+  padding-top    : 1rem;
+  padding-bottom : 1rem;
+  
+  position         : fixed;
+  top              : 0;
+  width            : 100%;
+  background-color : rgba(255,255,255,.8);
+  border-bottom    : 1px solid #eee;
+
+  letter-spacing : .3rem;
 }
 
-/* line 318, ../../sass/poole.scss */
 .masthead-title {
-  color: #887;
-  position: relative;
-  max-width: 38rem;
-  padding: 0 1rem;
-  margin: 0 auto;
-}
+  color         : #887;
+  position      : relative;
 
-/* line 326, ../../sass/poole.scss */
+  max-width : 38rem;
+  padding   : 0 1rem;
+  margin    : 0 auto;
+}
 .masthead-title a {
   color: #887;
 }
-
-/* line 329, ../../sass/poole.scss */
 .masthead-title small {
-  font-size: 60%;
-  font-weight: 400;
-  color: #c0c0c0;
-  letter-spacing: .1rem;
-  line-height: 2rem;
-  position: absolute;
-  right: 0;
+  font-size      : 60%;
+  font-weight    : 400;
+  color          : #c0c0c0;
+  letter-spacing : .1rem;
+  line-height    : 2rem;
+
+  position : absolute;
+  right    : 0;
 }
+
 
 /*
  * Posts and pages
@@ -391,28 +344,24 @@ tbody tr:nth-child(odd) th {
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
  */
-/* line 349, ../../sass/poole.scss */
+
 .page,
 .post {
   margin-bottom: 4em;
 }
 
 /* Blog post or page title */
-/* line 356, ../../sass/poole.scss */
 .page-title,
 .post-title,
 .post-title a {
   color: #303030;
 }
-
-/* line 360, ../../sass/poole.scss */
 .page-title,
 .post-title {
   margin-top: 0;
 }
 
 /* Meta data line below post title */
-/* line 365, ../../sass/poole.scss */
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -421,40 +370,30 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Related posts */
-/* line 373, ../../sass/poole.scss */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
-
-/* line 378, ../../sass/poole.scss */
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
-
-/* line 382, ../../sass/poole.scss */
 .related-posts h3 {
   margin-top: 0;
 }
-
-/* line 385, ../../sass/poole.scss */
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
-
-/* line 389, ../../sass/poole.scss */
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
-
-/* line 393, ../../sass/poole.scss */
 .related-posts li a:hover small {
   color: inherit;
 }
+
 
 /*
  * Pagination
@@ -462,10 +401,9 @@ tbody tr:nth-child(odd) th {
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
  * there are no more previous or next posts to show.
  */
-/* line 405, ../../sass/poole.scss */
+
 .pagination {
-  overflow: hidden;
-  /* clearfix */
+  overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
@@ -474,47 +412,36 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Pagination items can be `span`s or `a`s */
-/* line 415, ../../sass/poole.scss */
 .pagination-item {
   display: block;
   padding: 1rem;
   border: 1px solid #eee;
 }
-
-/* line 420, ../../sass/poole.scss */
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
 
 /* Only provide a hover state for linked pagination items */
-/* line 425, ../../sass/poole.scss */
 a.pagination-item:hover {
   background-color: #f5f5f5;
 }
 
 @media (min-width: 30em) {
-  /* line 430, ../../sass/poole.scss */
   .pagination {
     margin: 3rem 0;
   }
-
-  /* line 433, ../../sass/poole.scss */
   .pagination-item {
     float: left;
     width: 50%;
   }
-
-  /* line 437, ../../sass/poole.scss */
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius: 4px;
+    border-top-left-radius:    4px;
     border-bottom-left-radius: 4px;
   }
-
-  /* line 442, ../../sass/poole.scss */
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius: 4px;
+    border-top-right-radius:    4px;
     border-bottom-right-radius: 4px;
   }
 }
