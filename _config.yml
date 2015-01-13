@@ -9,7 +9,7 @@ relative_permalinks: true
 # Setup
 title:            Poole
 tagline:          The Jekyll Butler
-url:              http://getpoole.com
+url:              https://0065paula.github.io/blog
 paginate:         1
 baseurl:          https://0065paula.github.io/blog
 author:
