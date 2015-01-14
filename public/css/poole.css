@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  *                        ___
  *                       /\_ \
@@ -355,7 +356,7 @@ tbody tr:nth-child(odd) th {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(249, 251, 253, 0.8);
   border-bottom: 1px solid #eee;
   letter-spacing: .3rem;
 }
@@ -382,7 +383,7 @@ tbody tr:nth-child(odd) th {
   letter-spacing: .1rem;
   line-height: 2rem;
   position: absolute;
-  right: 0;
+  right: 1rem;
 }
 
 /*
@@ -478,43 +479,71 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border-top: 1px solid #eee;
+  font-size: .8rem;
+  position: relative;
 }
 
-/* line 420, ../../sass/poole.scss */
+/* line 423, ../../sass/poole.scss */
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
+/* line 426, ../../sass/poole.scss */
+.pagination-item:first-child:before {
+  content: "∴";
+  font-size: 2rem;
+  color: #C8D1DF;
+  position: absolute;
+  left: 1rem;
+  line-height: 1rem;
+  transform: rotate(-90deg);
+}
+
+/* line 438, ../../sass/poole.scss */
+.pagination-item:last-child:after {
+  content: "∴";
+  font-size: 2rem;
+  color: #C8D1DF;
+  position: absolute;
+  right: 1rem;
+  line-height: 1rem;
+  transform: rotate(90deg);
+}
 
 /* Only provide a hover state for linked pagination items */
-/* line 425, ../../sass/poole.scss */
+/* line 450, ../../sass/poole.scss */
 a.pagination-item:hover {
   background-color: #f5f5f5;
+  text-decoration: none;
+}
+
+/* footer */
+/* line 458, ../../sass/poole.scss */
+.footer {
+  font-size: .6rem;
+  color: #ccc;
+  font-family: Consolas, Monaco, monospace;
 }
 
 @media (min-width: 30em) {
-  /* line 430, ../../sass/poole.scss */
+  /* line 465, ../../sass/poole.scss */
   .pagination {
     margin: 3rem 0;
   }
 
-  /* line 433, ../../sass/poole.scss */
+  /* line 468, ../../sass/poole.scss */
   .pagination-item {
     float: left;
     width: 50%;
   }
 
-  /* line 437, ../../sass/poole.scss */
+  /* line 472, ../../sass/poole.scss */
   .pagination-item:first-child {
     margin-bottom: 0;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
   }
 
-  /* line 442, ../../sass/poole.scss */
+  /* line 475, ../../sass/poole.scss */
   .pagination-item:last-child {
     margin-left: -1px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
   }
 }
