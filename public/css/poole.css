@@ -376,14 +376,55 @@ tbody tr:nth-child(odd) th {
 }
 
 /* line 329, ../../sass/poole.scss */
-.masthead-title small {
+.masthead-desc {
   font-size: 60%;
   font-weight: 400;
   color: #c0c0c0;
   letter-spacing: .1rem;
   line-height: 2rem;
+}
+
+/* line 337, ../../sass/poole.scss */
+.masthead-nav {
+  font-size: .8rem;
   position: absolute;
   right: 1rem;
+  top: 1.7rem;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+/* line 347, ../../sass/poole.scss */
+.masthead:hover .masthead-nav {
+  opacity: 1;
+  top: .1rem;
+}
+/* line 352, ../../sass/poole.scss */
+.masthead-nav a {
+  margin-right: 2rem;
+  letter-spacing: .2rem;
+  padding-left: 5px;
+  color: #949CA1;
+  font-weight: 300;
+  line-height: 2rem;
+  height: 2rem;
+}
+/* line 361, ../../sass/poole.scss */
+.masthead-nav a:before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #949CA1;
+  border-radius: 50%;
+  margin-right: .4rem;
+  margin-bottom: .1rem;
+}
+/* line 372, ../../sass/poole.scss */
+.masthead-nav a:hover {
+  text-decoration: none;
+  color: #268bd2;
 }
 
 /*
@@ -392,28 +433,28 @@ tbody tr:nth-child(odd) th {
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
  */
-/* line 349, ../../sass/poole.scss */
+/* line 387, ../../sass/poole.scss */
 .page,
 .post {
   margin-bottom: 4em;
 }
 
 /* Blog post or page title */
-/* line 356, ../../sass/poole.scss */
+/* line 394, ../../sass/poole.scss */
 .page-title,
 .post-title,
 .post-title a {
   color: #303030;
 }
 
-/* line 360, ../../sass/poole.scss */
+/* line 398, ../../sass/poole.scss */
 .page-title,
 .post-title {
   margin-top: 0;
 }
 
 /* Meta data line below post title */
-/* line 365, ../../sass/poole.scss */
+/* line 403, ../../sass/poole.scss */
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -422,37 +463,37 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Related posts */
-/* line 373, ../../sass/poole.scss */
+/* line 411, ../../sass/poole.scss */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
 
-/* line 378, ../../sass/poole.scss */
+/* line 416, ../../sass/poole.scss */
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 382, ../../sass/poole.scss */
+/* line 420, ../../sass/poole.scss */
 .related-posts h3 {
   margin-top: 0;
 }
 
-/* line 385, ../../sass/poole.scss */
+/* line 423, ../../sass/poole.scss */
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
 
-/* line 389, ../../sass/poole.scss */
+/* line 427, ../../sass/poole.scss */
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
 
-/* line 393, ../../sass/poole.scss */
+/* line 431, ../../sass/poole.scss */
 .related-posts li a:hover small {
   color: inherit;
 }
@@ -463,7 +504,7 @@ tbody tr:nth-child(odd) th {
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
  * there are no more previous or next posts to show.
  */
-/* line 405, ../../sass/poole.scss */
+/* line 443, ../../sass/poole.scss */
 .pagination {
   overflow: hidden;
   /* clearfix */
@@ -475,7 +516,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Pagination items can be `span`s or `a`s */
-/* line 415, ../../sass/poole.scss */
+/* line 453, ../../sass/poole.scss */
 .pagination-item {
   display: block;
   padding: 1rem;
@@ -484,11 +525,11 @@ tbody tr:nth-child(odd) th {
   position: relative;
 }
 
-/* line 423, ../../sass/poole.scss */
+/* line 461, ../../sass/poole.scss */
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
-/* line 426, ../../sass/poole.scss */
+/* line 464, ../../sass/poole.scss */
 .pagination-item:first-child:before {
   content: "∴";
   font-size: 2rem;
@@ -497,9 +538,14 @@ tbody tr:nth-child(odd) th {
   left: 1rem;
   line-height: 1rem;
   transform: rotate(-90deg);
+  -webkit-transition: left .1s ease-in-out;
+  -moz-transition: left .1s ease-in-out;
+  -ms-transition: left .1s ease-in-out;
+  -o-transition: left .1s ease-in-out;
+  transition: left .1s ease-in-out;
 }
 
-/* line 438, ../../sass/poole.scss */
+/* line 482, ../../sass/poole.scss */
 .pagination-item:last-child:after {
   content: "∴";
   font-size: 2rem;
@@ -508,17 +554,32 @@ tbody tr:nth-child(odd) th {
   right: 1rem;
   line-height: 1rem;
   transform: rotate(90deg);
+  -webkit-transition: right .1s ease-in-out;
+  -moz-transition: right .1s ease-in-out;
+  -ms-transition: right .1s ease-in-out;
+  -o-transition: right .1s ease-in-out;
+  transition: right .1s ease-in-out;
 }
 
 /* Only provide a hover state for linked pagination items */
-/* line 450, ../../sass/poole.scss */
+/* line 500, ../../sass/poole.scss */
 a.pagination-item:hover {
   background-color: #f5f5f5;
   text-decoration: none;
 }
+/* line 504, ../../sass/poole.scss */
+a.pagination-item:hover:before {
+  left: .5rem;
+  color: #999;
+}
+/* line 509, ../../sass/poole.scss */
+a.pagination-item:hover:after {
+  right: .5rem;
+  color: #999;
+}
 
 /* footer */
-/* line 458, ../../sass/poole.scss */
+/* line 518, ../../sass/poole.scss */
 .footer {
   font-size: .6rem;
   color: #ccc;
@@ -526,23 +587,23 @@ a.pagination-item:hover {
 }
 
 @media (min-width: 30em) {
-  /* line 465, ../../sass/poole.scss */
+  /* line 525, ../../sass/poole.scss */
   .pagination {
     margin: 3rem 0;
   }
 
-  /* line 468, ../../sass/poole.scss */
+  /* line 528, ../../sass/poole.scss */
   .pagination-item {
     float: left;
     width: 50%;
   }
 
-  /* line 472, ../../sass/poole.scss */
+  /* line 532, ../../sass/poole.scss */
   .pagination-item:first-child {
     margin-bottom: 0;
   }
 
-  /* line 475, ../../sass/poole.scss */
+  /* line 535, ../../sass/poole.scss */
   .pagination-item:last-child {
     margin-left: -1px;
   }
