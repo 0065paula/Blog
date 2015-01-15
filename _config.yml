@@ -11,7 +11,7 @@ title:            零零陆伍
 tagline:          夏日手帐
 url:              http://0065paula.github.io/blog
 paginate:         1
-baseurl:          /blog/
+baseurl:          /blog
 author:
   name:           Mark Otto
   url:            https://twitter.com/mdo
