@@ -356,7 +356,7 @@ tbody tr:nth-child(odd) th {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba(249, 251, 253, 0.8);
+  background-color: rgba(249, 251, 253, 0.9);
   border-bottom: 1px solid #eee;
   letter-spacing: .3rem;
 }
