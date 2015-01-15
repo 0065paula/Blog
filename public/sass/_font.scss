@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: 'slabo';
+    src: url('../font/slabo27px-regular-webfont.eot');
+    src: url('../font/slabo27px-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/slabo27px-regular-webfont.woff2') format('woff2'),
+         url('../font/slabo27px-regular-webfont.woff') format('woff'),
+         url('../font/slabo27px-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+// @font-face {
+//     font-family: 'open_sansCL';
+//     src: url('../font/opensans-condlight-webfont.eot');
+//     src: url('../font/opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../font/opensans-condlight-webfont.woff2') format('woff2'),
+//          url('../font/opensans-condlight-webfont.woff') format('woff'),
+//          url('../font/opensans-condlight-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+
+
+
+// @font-face {
+//     font-family: 'open_sansCB';
+//     src: url('../font/opensans-condbold-webfont.eot');
+//     src: url('../font/opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../font/opensans-condbold-webfont.woff2') format('woff2'),
+//          url('../font/opensans-condbold-webfont.woff') format('woff'),
+//          url('../font/opensans-condbold-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+
+
+
+// @font-face {
+//     font-family: 'open_sansCLI';
+//     src: url('../font/opensans-condlightitalic-webfont.eot');
+//     src: url('../font/opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../font/opensans-condlightitalic-webfont.woff2') format('woff2'),
+//          url('../font/opensans-condlightitalic-webfont.woff') format('woff'),
+//          url('../font/opensans-condlightitalic-webfont.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+
+// }
+
+html {
+	font-family: slabo, "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Source Han Sans", "Microsoft YaHei" sans-serif;
+}
