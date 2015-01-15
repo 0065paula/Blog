@@ -21,3 +21,8 @@ author:
 version:          1.0.0
 github:
   repo:           https://0065paula.github.io/blog/
+
+# This is the list of pages to incldue in the header of the website.
+pages_list:       
+  关于: '/blog/about'
+  存档: '/blog/archive'
