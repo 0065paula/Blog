@@ -143,34 +143,48 @@ h4, h5, h6 {
 /* line 119, ../sass/poole.scss */
 p {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   letter-spacing: .02rem;
+  font-size: .8rem;
+  line-height: 1.4rem;
 }
 
-/* line 125, ../sass/poole.scss */
+/* line 127, ../sass/poole.scss */
 strong {
   color: #303030;
 }
 
-/* Lists */
 /* line 131, ../sass/poole.scss */
+blockquote {
+  opacity: .6;
+}
+
+/* Lists */
+/* line 136, ../sass/poole.scss */
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: .8rem;
 }
 
-/* line 136, ../sass/poole.scss */
+/* line 142, ../sass/poole.scss */
+li {
+  margin-bottom: .4rem;
+  line-height: 1.4rem;
+}
+
+/* line 147, ../sass/poole.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 139, ../sass/poole.scss */
+/* line 150, ../sass/poole.scss */
 dd {
   margin-bottom: .5rem;
 }
 
 /* Misc */
-/* line 144, ../sass/poole.scss */
+/* line 155, ../sass/poole.scss */
 hr {
   position: relative;
   margin: 1.5rem 0;
@@ -179,7 +193,7 @@ hr {
   border-bottom: 1px solid #fff;
 }
 
-/* line 152, ../sass/poole.scss */
+/* line 163, ../sass/poole.scss */
 abbr {
   font-size: 85%;
   font-weight: bold;
@@ -187,20 +201,20 @@ abbr {
   text-transform: uppercase;
 }
 
-/* line 158, ../sass/poole.scss */
+/* line 169, ../sass/poole.scss */
 abbr[title] {
   cursor: help;
   border-bottom: 1px dotted #e5e5e5;
 }
 
 /* Code */
-/* line 165, ../sass/poole.scss */
+/* line 176, ../sass/poole.scss */
 code,
 pre {
   font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
-/* line 168, ../sass/poole.scss */
+/* line 179, ../sass/poole.scss */
 code {
   padding: .25em .5em;
   font-size: 85%;
@@ -209,7 +223,7 @@ code {
   border-radius: 3px;
 }
 
-/* line 175, ../sass/poole.scss */
+/* line 186, ../sass/poole.scss */
 pre {
   display: block;
   margin-top: 0;
@@ -224,7 +238,7 @@ pre {
   background-color: #f9f9f9;
 }
 
-/* line 188, ../sass/poole.scss */
+/* line 199, ../sass/poole.scss */
 pre code {
   padding: 0;
   font-size: 100%;
@@ -233,41 +247,41 @@ pre code {
 }
 
 /* Pygments via Jekyll */
-/* line 196, ../sass/poole.scss */
+/* line 207, ../sass/poole.scss */
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
 }
 
-/* line 200, ../sass/poole.scss */
+/* line 211, ../sass/poole.scss */
 .highlight pre {
   margin-bottom: 0;
 }
 
 /* Gist via GitHub Pages */
-/* line 205, ../sass/poole.scss */
+/* line 216, ../sass/poole.scss */
 .gist .gist-file {
   font-family: Menlo, Monaco, "Courier New", monospace !important;
 }
 
-/* line 208, ../sass/poole.scss */
+/* line 219, ../sass/poole.scss */
 .gist .markdown-body {
   padding: 15px;
 }
 
-/* line 211, ../sass/poole.scss */
+/* line 222, ../sass/poole.scss */
 .gist pre {
   padding: 0;
   background-color: transparent;
 }
 
-/* line 215, ../sass/poole.scss */
+/* line 226, ../sass/poole.scss */
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
   line-height: 1.4;
 }
 
-/* line 219, ../sass/poole.scss */
+/* line 230, ../sass/poole.scss */
 .gist code {
   padding: 0;
   color: inherit;
@@ -276,7 +290,7 @@ pre code {
 }
 
 /* Quotes */
-/* line 227, ../sass/poole.scss */
+/* line 238, ../sass/poole.scss */
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
@@ -284,19 +298,19 @@ blockquote {
   border-left: .25rem solid #e5e5e5;
 }
 
-/* line 233, ../sass/poole.scss */
+/* line 244, ../sass/poole.scss */
 blockquote p:last-child {
   margin-bottom: 0;
 }
 
 @media (min-width: 30em) {
-  /* line 237, ../sass/poole.scss */
+  /* line 248, ../sass/poole.scss */
   blockquote {
     padding-right: 5rem;
     padding-left: 1.25rem;
   }
 }
-/* line 243, ../sass/poole.scss */
+/* line 254, ../sass/poole.scss */
 img {
   display: block;
   max-width: 100%;
@@ -305,7 +319,7 @@ img {
 }
 
 /* Tables */
-/* line 251, ../sass/poole.scss */
+/* line 262, ../sass/poole.scss */
 table {
   margin-bottom: 1rem;
   width: 100%;
@@ -313,14 +327,14 @@ table {
   border-collapse: collapse;
 }
 
-/* line 258, ../sass/poole.scss */
+/* line 269, ../sass/poole.scss */
 td,
 th {
   padding: .25rem .5rem;
   border: 1px solid #e5e5e5;
 }
 
-/* line 263, ../sass/poole.scss */
+/* line 274, ../sass/poole.scss */
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
@@ -331,7 +345,7 @@ tbody tr:nth-child(odd) th {
  *
  * Extend paragraphs with `.lead` for larger introductory text.
  */
-/* line 274, ../sass/poole.scss */
+/* line 285, ../sass/poole.scss */
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
@@ -343,7 +357,7 @@ tbody tr:nth-child(odd) th {
  * Show alert messages to users. You may add it to single elements like a `<p>`,
  * or to a parent if there are multiple elements to show.
  */
-/* line 287, ../sass/poole.scss */
+/* line 298, ../sass/poole.scss */
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
@@ -356,7 +370,7 @@ tbody tr:nth-child(odd) th {
  *
  * Center the page content.
  */
-/* line 301, ../sass/poole.scss */
+/* line 312, ../sass/poole.scss */
 .container {
   max-width: 38rem;
   padding-left: 1rem;
@@ -371,7 +385,7 @@ tbody tr:nth-child(odd) th {
  *
  * Super small header above the content for site name and short description.
  */
-/* line 317, ../sass/poole.scss */
+/* line 328, ../sass/poole.scss */
 .masthead {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -382,7 +396,7 @@ tbody tr:nth-child(odd) th {
   border-bottom: 1px solid #eee;
 }
 
-/* line 328, ../sass/poole.scss */
+/* line 339, ../sass/poole.scss */
 .masthead-title {
   color: #a4dead;
   position: relative;
@@ -391,7 +405,7 @@ tbody tr:nth-child(odd) th {
   margin: 0 auto;
 }
 
-/* line 339, ../sass/poole.scss */
+/* line 350, ../sass/poole.scss */
 .masthead-desc {
   font-size: 60%;
   font-weight: 400;
@@ -400,7 +414,7 @@ tbody tr:nth-child(odd) th {
   line-height: 2rem;
 }
 
-/* line 347, ../sass/poole.scss */
+/* line 358, ../sass/poole.scss */
 .masthead-nav {
   font-size: .8rem;
   position: absolute;
@@ -411,12 +425,12 @@ tbody tr:nth-child(odd) th {
   -o-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
-/* line 357, ../sass/poole.scss */
+/* line 368, ../sass/poole.scss */
 .masthead:hover .masthead-nav {
   opacity: 1;
   top: .1rem;
 }
-/* line 362, ../sass/poole.scss */
+/* line 373, ../sass/poole.scss */
 .masthead-nav a {
   margin-right: 2rem;
   letter-spacing: .2rem;
@@ -426,7 +440,7 @@ tbody tr:nth-child(odd) th {
   line-height: 2rem;
   height: 2rem;
 }
-/* line 371, ../sass/poole.scss */
+/* line 382, ../sass/poole.scss */
 .masthead-nav a:before {
   content: "";
   display: inline-block;
@@ -437,7 +451,7 @@ tbody tr:nth-child(odd) th {
   margin-right: .4rem;
   margin-bottom: .1rem;
 }
-/* line 382, ../sass/poole.scss */
+/* line 393, ../sass/poole.scss */
 .masthead-nav a:hover {
   text-decoration: none;
   color: #268bd2;
@@ -449,33 +463,33 @@ tbody tr:nth-child(odd) th {
  * Each post is wrapped in `.post` and is used on default and post layouts. Each
  * page is wrapped in `.page` and is only used on the page layout.
  */
-/* line 397, ../sass/poole.scss */
+/* line 408, ../sass/poole.scss */
 .page,
 .post {
   margin-bottom: 4em;
 }
 
 /* Blog post or page title */
-/* line 404, ../sass/poole.scss */
+/* line 415, ../sass/poole.scss */
 .page-title,
 .post-title,
 .post-title a {
   color: #59c36a;
 }
 
-/* line 408, ../sass/poole.scss */
+/* line 419, ../sass/poole.scss */
 .post-title a:hover {
   color: #30863e;
 }
 
-/* line 413, ../sass/poole.scss */
+/* line 424, ../sass/poole.scss */
 .page-title,
 .post-title {
   margin-top: 0;
 }
 
 /* Meta data line below post title */
-/* line 418, ../sass/poole.scss */
+/* line 429, ../sass/poole.scss */
 .post-date {
   display: block;
   margin-top: -.5rem;
@@ -485,37 +499,37 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Related posts */
-/* line 427, ../sass/poole.scss */
+/* line 438, ../sass/poole.scss */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
 
-/* line 432, ../sass/poole.scss */
+/* line 443, ../sass/poole.scss */
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
 
-/* line 436, ../sass/poole.scss */
+/* line 447, ../sass/poole.scss */
 .related-posts h3 {
   margin-top: 0;
 }
 
-/* line 439, ../sass/poole.scss */
+/* line 450, ../sass/poole.scss */
 .related-posts li small {
   font-size: 75%;
   color: #999;
 }
 
-/* line 443, ../sass/poole.scss */
+/* line 454, ../sass/poole.scss */
 .related-posts li a:hover {
   color: #268bd2;
   text-decoration: none;
 }
 
-/* line 447, ../sass/poole.scss */
+/* line 458, ../sass/poole.scss */
 .related-posts li a:hover small {
   color: inherit;
 }
@@ -526,7 +540,7 @@ tbody tr:nth-child(odd) th {
  * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
  * there are no more previous or next posts to show.
  */
-/* line 459, ../sass/poole.scss */
+/* line 470, ../sass/poole.scss */
 .pagination {
   overflow: hidden;
   /* clearfix */
@@ -537,7 +551,7 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Pagination items can be `span`s or `a`s */
-/* line 468, ../sass/poole.scss */
+/* line 479, ../sass/poole.scss */
 .pagination-item {
   display: block;
   padding: 1rem;
@@ -550,11 +564,11 @@ tbody tr:nth-child(odd) th {
   transition: background-color .1s ease-in-out;
 }
 
-/* line 481, ../sass/poole.scss */
+/* line 492, ../sass/poole.scss */
 .pagination-item:first-child {
   margin-bottom: -1px;
 }
-/* line 484, ../sass/poole.scss */
+/* line 495, ../sass/poole.scss */
 .pagination-item:first-child:before {
   content: "∴";
   font-size: 1rem;
@@ -570,7 +584,7 @@ tbody tr:nth-child(odd) th {
   transition: left .1s ease-in-out;
 }
 
-/* line 502, ../sass/poole.scss */
+/* line 513, ../sass/poole.scss */
 .pagination-item:last-child:after {
   content: "∴";
   font-size: 1rem;
@@ -587,24 +601,24 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Only provide a hover state for linked pagination items */
-/* line 520, ../sass/poole.scss */
+/* line 531, ../sass/poole.scss */
 a.pagination-item:hover {
   background-color: #f7fbf8;
   text-decoration: none;
 }
-/* line 524, ../sass/poole.scss */
+/* line 535, ../sass/poole.scss */
 a.pagination-item:hover:before {
   left: .5rem;
   color: #999;
 }
-/* line 529, ../sass/poole.scss */
+/* line 540, ../sass/poole.scss */
 a.pagination-item:hover:after {
   right: .5rem;
   color: #999;
 }
 
 /* footer */
-/* line 538, ../sass/poole.scss */
+/* line 549, ../sass/poole.scss */
 .footer {
   font-size: .6rem;
   color: #ccc;
@@ -612,23 +626,23 @@ a.pagination-item:hover:after {
 }
 
 @media (min-width: 30em) {
-  /* line 545, ../sass/poole.scss */
+  /* line 556, ../sass/poole.scss */
   .pagination {
     margin: 3rem 0;
   }
 
-  /* line 548, ../sass/poole.scss */
+  /* line 559, ../sass/poole.scss */
   .pagination-item {
     float: left;
     width: 50%;
   }
 
-  /* line 552, ../sass/poole.scss */
+  /* line 563, ../sass/poole.scss */
   .pagination-item:first-child {
     margin-bottom: 0;
   }
 
-  /* line 555, ../sass/poole.scss */
+  /* line 566, ../sass/poole.scss */
   .pagination-item:last-child {
     margin-left: -1px;
   }

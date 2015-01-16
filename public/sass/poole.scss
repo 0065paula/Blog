@@ -117,20 +117,31 @@ h4, h5, h6 {
 
 /* Body text */
 p {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  letter-spacing: .02rem;
+  margin-top     : 0;
+  margin-bottom  : 1rem;
+  letter-spacing : .02rem;
+  font-size      : .8rem;
+  line-height    : 1.4rem;
 }
 
 strong {
   color: #303030;
 }
 
+blockquote {
+  opacity: .6;
+}
 
 /* Lists */
 ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top    : 0;
+  margin-bottom : 1rem;
+  font-size     : .8rem;
+}
+
+li {
+  margin-bottom: .4rem;
+  line-height: 1.4rem;
 }
 
 dt {
