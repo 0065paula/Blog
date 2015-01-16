@@ -620,29 +620,38 @@ a.pagination-item:hover:after {
 /* footer */
 /* line 549, ../sass/poole.scss */
 .footer {
-  font-size: .6rem;
   color: #ccc;
+  font-family: Consolas, Monaco, monospace;
+  margin-top: 3rem;
+}
+/* line 554, ../sass/poole.scss */
+.footer p {
+  font-size: .6rem;
+}
+
+/* line 559, ../sass/poole.scss */
+.mono {
   font-family: Consolas, Monaco, monospace;
 }
 
 @media (min-width: 30em) {
-  /* line 556, ../sass/poole.scss */
+  /* line 564, ../sass/poole.scss */
   .pagination {
     margin: 3rem 0;
   }
 
-  /* line 559, ../sass/poole.scss */
+  /* line 567, ../sass/poole.scss */
   .pagination-item {
     float: left;
     width: 50%;
   }
 
-  /* line 563, ../sass/poole.scss */
+  /* line 571, ../sass/poole.scss */
   .pagination-item:first-child {
     margin-bottom: 0;
   }
 
-  /* line 566, ../sass/poole.scss */
+  /* line 574, ../sass/poole.scss */
   .pagination-item:last-child {
     margin-left: -1px;
   }
