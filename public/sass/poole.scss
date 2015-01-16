@@ -329,8 +329,10 @@ tbody tr:nth-child(odd) th {
   padding-top    : 1rem;
   padding-bottom : 1rem;
   
-  position         : fixed;
-  top              : 0;
+  position : fixed;
+  top      : 0;
+  z-index  : 99;
+
   width            : 100%;
   background-color : rgba(249, 251, 253, 0.9);
   border-bottom    : 1px solid #eee;
