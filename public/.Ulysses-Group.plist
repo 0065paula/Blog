@@ -7,6 +7,7 @@
 		<string>css</string>
 		<string>font</string>
 		<string>sass</string>
+		<string>images</string>
 	</array>
 	<key>createMarkedFile</key>
 	<false/>

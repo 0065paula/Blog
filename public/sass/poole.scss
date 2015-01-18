@@ -93,7 +93,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height    : 1.25;
   color          : saturate(darken($body-text, 8%),30%);
   text-rendering : optimizeLegibility;
-  letter-spacing : 0.1rem;
 
   &.engfix {
     letter-spacing: 0;
@@ -129,7 +128,26 @@ strong {
 }
 
 blockquote {
-  opacity: .6;
+  // opacity: .7;
+  -webkit-transition: background .1s ease-in-out;
+  -o-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+
+  background: transparentize($body-text,.95);
+
+  em {
+    color: lighten($body-text,20%);
+  }
+
+  .post-date + & {
+    margin-bottom : 4rem;
+    text-align    : right;
+    border-left   : none;
+    border-right  : .25rem solid #e5e5e5;
+    padding-right : 1rem;
+    padding-left  : 5rem;
+  }
+
 }
 
 /* Lists */
@@ -255,7 +273,7 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  // border-radius: 5px;
 }
 
 /* Tables */
@@ -345,6 +363,8 @@ tbody tr:nth-child(odd) th {
   max-width : 38rem;
   padding   : 0 1rem;
   margin    : 0 auto;
+
+  letter-spacing: .2rem;
 }
 // .masthead-title a {
 //   color: $base-g;
@@ -394,7 +414,7 @@ tbody tr:nth-child(odd) th {
 
     &:hover {
       text-decoration : none;
-      color           : #268bd2;
+      color           : darken($link-g,20%);
     }
   }
 }
@@ -425,6 +445,29 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title {
   margin-top: 0;
+}
+
+.content {
+  img {
+    max-width : 60%;
+    margin    : 2rem auto;
+  }
+
+  a {
+    border-bottom : 1px dotted $base-g;
+  }
+}
+
+.img-list {
+  display                 : -webkit-box;
+  display                 : -webkit-flex;
+  display                 : -ms-flexbox;
+  display                 : flex;
+  
+
+  li {
+  
+  }
 }
 
 /* Meta data line below post title */
@@ -530,6 +573,9 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Only provide a hover state for linked pagination items */
+a.pagination-item {
+  border-bottom: none;
+}
 a.pagination-item:hover {
   background-color : desaturate(lighten($base-g,22%),10%);
   text-decoration  : none;
@@ -575,5 +621,13 @@ a.pagination-item:hover {
   }
   .pagination-item:last-child {
     margin-left: -1px;
+  }
+}
+
+/* Archive */
+.archive-list {
+  dd a {
+    font-size: 1.2rem;
+    line-height: 2rem;
   }
 }
