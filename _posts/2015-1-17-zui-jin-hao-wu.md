@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 最近看到的好事物
+title: 随机片段【00】- 视觉养分
 ---
 
 > Before you cross the street take my hand.
