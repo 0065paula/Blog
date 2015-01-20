@@ -18,6 +18,7 @@ title: 最近看到的好事物
 - [http://theinteriorprospect.blogspot.jp/][6]
 - [http://www.ascmag.com/blog/2010/02/22/%E2%80%9Cfrom-my-window%E2%80%9D-the-late-work-of-andre-kertesz-and-josef-sudek/][7]
 
+---- 
 ## Michiel Schrijver
 ![The world outside. 120 x 80 cm. 2014][image-2]
 

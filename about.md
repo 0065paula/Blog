@@ -12,4 +12,10 @@ title: 关于
 <li> douban:   <a href="http://www.douban.com/mine/" target="_blank">0065paula</a></li>
 <li> zhihu:     <a href="http://www.zhihu.com/people/meng-shuang-paula" target="_blank">孟爽Paula</a></li>
 <li> dribbble: <a href="https://dribbble.com/0065paula" target="_blank">0065paula</a></li>
+</ul>
 
+---- 
+### 关于本站
+使用 Jekyll 架设在 GitHub 上。模板基于 [Poole][1] 修改而来。
+
+[1]:	https://github.com/poole/poole
