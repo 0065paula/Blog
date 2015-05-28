@@ -25,7 +25,6 @@ title: 随机片段【00】- 视觉养分
 [Michiel Schrijver][8]，荷兰画家。[名字怎么读][9]
 
 
-
 [1]:	http://www.youtube.com/watch?v=Z5BBEOjUKrI
 [2]:	http://en.wikipedia.org/wiki/Josef%5C_Sudek
 [3]:	https://translate.google.com.hk/?ie=UTF-8&hl=en&client=tw-ob#cs/en/Josef%20Sudek
